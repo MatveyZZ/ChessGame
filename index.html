@@ -1,32 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Определяет тип документа как HTML5 -->
+<html lang="en"> <!-- Начало HTML-документа с указанием языка (английский) -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
-    <title>Chess Game</title>
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку документа на UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Указывает браузеру использовать режим совместимости с последними версиями IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Устанавливает параметры для адаптивного дизайна на мобильных устройствах -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключает основной файл стилей CSS -->
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css"> <!-- Подключает стили для шахматной доски -->
+    <title>Chess Game</title> <!-- Устанавливает заголовок страницы, который отображается на вкладке браузера -->
 </head>
 
 <body>
     
-    <div class="container">
-        <h1>Chess Game</h1>
-        <div class="board" id="board"></div>
-        <div class="buttons">
-            <button class="play-again">Play Again</button>
-            <button class="set-pos">Set Position</button>
-            <button class="flip-board">Flip Board</button>
+    <div class="container"> <!-- Контейнер для всего содержимого страницы -->
+        <h1>Chess Game</h1> <!-- Заголовок уровня 1 для названия игры -->
+        <div class="board" id="board"></div> <!-- Элемент для отображения шахматной доски -->
+        <div class="buttons"> <!-- Контейнер для кнопок управления игрой -->
+            <button class="play-again">Play Again</button> <!-- Кнопка для начала новой игры -->
+            <button class="set-pos">Set Position</button> <!-- Кнопка для установки заданной позиции на доске -->
+            <button class="flip-board">Flip Board</button> <!-- Кнопка для переворота доски -->
         </div>
-        <div id="move-history" class="move-history"></div>
+        <div id="move-history" class="move-history"></div> <!-- Элемент для отображения истории ходов -->
     </div>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/chessboard-1.0.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- Подключает библиотеку jQuery для упрощения работы с JavaScript -->
+    <script src="js/chessboard-1.0.0.min.js"></script> <!-- Подключает скрипт для работы с шахматной доской -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script> <!-- Подключает библиотеку chess.js для работы с логикой шахматной игры -->
+    <script src="script.js"></script> <!-- Подключает пользовательский скрипт для управления игрой -->
 </body>
 
 </html>

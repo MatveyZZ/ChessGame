@@ -1,67 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); /* Импортирует шрифт Poppins из Google Fonts с различными толщинами */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+    margin: 0; /* Убирает отступы у всех элементов */
+    padding: 0; /* Убирает внутренние отступы у всех элементов */
+    box-sizing: border-box; /* Устанавливает модель коробки, чтобы padding и border входили в общую ширину и высоту элемента */
+    font-family: 'Poppins', sans-serif; /* Устанавливает шрифт Poppins для всех элементов */
 }
 
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
+body {
+    height: 100vh; /* Устанавливает высоту тела документа на 100% высоты окна браузера */
+    display: flex; /* Использует flexbox для выравнивания содержимого */
+    align-items: center; /* Выравнивает содержимое по вертикали по центру */
+    justify-content: center; /* Выравнивает содержимое по горизонтали по центру */
+    background-color: #f2f2f2; /* Устанавливает светло-серый цвет фона для страницы */
 }
 
-.container{
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.container {
+    background-color: #fff; /* Устанавливает белый цвет фона для контейнера */
+    padding: 2rem; /* Устанавливает внутренние отступы контейнера */
+    border-radius: 10px; /* Закругляет углы контейнера */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавляет тень к контейнеру */
 }
 
-h1{
-    text-align: center;
-    font-weight: 500;
+h1 {
+    text-align: center; /* Выравнивает текст заголовка по центру */
+    font-weight: 500; /* Устанавливает толщину шрифта для заголовка */
 }
 
-.board{
-    width: 400px;
-    margin: 20px auto;
+.board {
+    width: 400px; /* Устанавливает ширину шахматной доски */
+    margin: 20px auto; /* Устанавливает верхний и нижний отступы, а также центрирует доску по горизонтали */
 }
 
-.buttons{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.buttons {
+    margin-top: 20px; /* Устанавливает верхний отступ для контейнера кнопок */
+    display: flex; /* Использует flexbox для выравнивания кнопок */
+    justify-content: center; /* Центрирует кнопки по горизонтали */
+    gap: 10px; /* Устанавливает промежуток между кнопками */
 }
 
-button{
-    color: #fff;
-    background-color: #000;
-    border: none;
-    width: 120px;
-    height: 40px;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+button {
+    color: #fff; /* Устанавливает белый цвет текста кнопки */
+    background-color: #000; /* Устанавливает черный цвет фона кнопки */
+    border: none; /* Убирает рамку у кнопки */
+    width: 120px; /* Устанавливает фиксированную ширину кнопки */
+    height: 40px; /* Устанавливает фиксированную высоту кнопки */
+    border-radius: 6px; /* Закругляет углы кнопки */
+    font-size: 0.9rem; /* Устанавливает размер шрифта для текста кнопки */
+    cursor: pointer; /* Изменяет курсор на указатель при наведении на кнопку */
+    transition: all 0.3s ease; /* Добавляет плавный переход для всех свойств при изменении */
 }
 
-button:hover{
-    background-color: #434343;
+button:hover {
+    background-color: #434343; /* Изменяет цвет фона кнопки при наведении */
 }
 
-.move-history{
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    height: 100px;
-    width: 400px;
-    overflow-y: scroll;
-    background-color: #f2f2f2;
+.move-history {
+    margin-top: 20px; /* Устанавливает верхний отступ для области истории ходов */
+    border: 1px solid #ccc; /* Устанавливает светло-серую рамку вокруг области истории ходов */
+    padding: 10px; /* Устанавливает внутренние отступы для области истории ходов */
+    border-radius: 5px; /* Закругляет углы области истории ходов */
+    height: 100px; /* Устанавливает фиксированную высоту области истории ходов */
+    width: 400px; /* Устанавливает фиксированную ширину области истории ходов */
+    overflow-y: scroll; /* Добавляет вертикальную прокрутку, если содержимое превышает высоту области */
+    background-color: #f2f2f2; /* Устанавливает светло-серый цвет фона для области истории ходов */
 }
